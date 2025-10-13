@@ -27,7 +27,8 @@ const db= new sqlite3.Database(dbUbicacion,(Error)=>{
                 else{
                     console.log('Tabla User Creada ✅')
                 }
-            }
-        )
+            })
     }
 })
+
+module.exports=db;
