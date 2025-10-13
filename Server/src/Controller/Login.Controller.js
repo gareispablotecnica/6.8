@@ -13,12 +13,27 @@ const RegistrarUsuario=async(req,res)=>{
         if(!Usuario || !Contraseña || !Nombre){
             return res.status(201).json({Error: 'Datos Vacios'})
         }
-        const hash= hashPassword(Contraseña);
+        const hash=await hashPassword(Contraseña);
 
         const query=`INSERT INTO User(Usuario,Contraseña,Nombre)VALUES(?,?,?)`
 
-    }
-    catch(Error){
+        db.run(query,[Usuario,hash,Nombre],(Error)=>{
+            if(Error){
+                console.error('No se Pudo Registrar el Usuario ⛔',Error)
+                return res.status(201).json({Error: 'El Usuario no se Encuentra Registrado'})
+            }
+            else{
+                return res.json({
+                    ID: this.lastID,
+                    Usuario
+                })
+            }
+        })
 
     }
+    catch(Error){
+        console.error(Error)
+    }
 }
+
+module.exports={RegistrarUsuario};
