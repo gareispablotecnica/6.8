@@ -20,7 +20,14 @@ const db= new sqlite3.Database(dbUbicacion,(Error)=>{
             Usuario TEXT UNIQUE NOT NULL,
             Contraseña TEXT,
             Nombre TEXT
-            )`
+            )`,(Error)=>{
+                if(Error){
+                    console.error('No se Pudo Crear la Tabla ⛔')
+                }
+                else{
+                    console.log('Tabla User Creada ✅')
+                }
+            }
         )
     }
 })
