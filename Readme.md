@@ -34,6 +34,7 @@ Proyecto Aulico realizado para registrar mediante un hash de encriptado un Nuevo
 │ │ ├─ Router
 │ │ ├─ DataBase
 │ │ └─ Utils
+│ │ │  └─ Hash.js
 │ ├─ .gitignore
 │ ├─ app.js
 │ ├─ package-lock.json
