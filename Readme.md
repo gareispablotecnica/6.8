@@ -2,7 +2,7 @@
 
 Proyecto Aulico realizado para registrar mediante un hash de encriptado un Nuevo Usuario
 
-## 📚 Datos del Curso
+## 📚 Datos del Curso:
 
 - Materia: Diseño Web Dinámico
 - Curso: 6to 3ra.
