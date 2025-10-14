@@ -9,7 +9,7 @@ Proyecto Aulico realizado para registrar mediante un hash de encriptado un Nuevo
 - Grupo de Taller: 6.8
 - Docente: Gareis Pablo
 
-## ⚙ Subdivisión de Tareas
+## ⚙ Subdivisión de Tareas:
 - BackEnd:
 - FrontEnd:
 - Documentación: 
