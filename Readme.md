@@ -1,4 +1,4 @@
-# Proyecto realizado en React + Node js + SQLite3
+# Proyecto Aulico realizado en React + Node js + SQLite3
 
 Proyecto Aulico realizado para registrar mediante un hash de encriptado un Nuevo Usuario
 
