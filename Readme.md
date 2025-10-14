@@ -6,7 +6,7 @@ Proyecto Aulico realizado para registrar mediante un hash de encriptado un Nuevo
 
 - Materia: Diseño Web Dinámico
 - Curso: 6to 3ra.
-- Grupo de Taller: 6.8
+- Grupo de Taller: 6.8.
 - Docente: Gareis Pablo
 
 ## ⚙ Subdivisión de Tareas
