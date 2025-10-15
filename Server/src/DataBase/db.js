@@ -5,7 +5,7 @@ const sqlite3= require('sqlite3')
 const path= require('path')
 
 // ---> Ubicación de la Base de Datos
-const dbUbicacion= path.relative(__dirname,'./Artista.db')
+const dbUbicacion= path.resolve(__dirname,'./Artista.db')
 
 const db= new sqlite3.Database(dbUbicacion,(Error)=>{
     if(Error){

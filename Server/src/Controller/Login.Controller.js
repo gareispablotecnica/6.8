@@ -23,7 +23,8 @@ const RegistrarUsuario=async(req,res)=>{
                 return res.status(201).json({Error: 'El Usuario no se Encuentra Registrado'})
             }
             else{
-                return res.json({
+                return res.status(201).json({
+                    mensaje: "Datos Registrados Correctamente 💚",
                     ID: this.lastID,
                     Usuario
                 })
@@ -32,7 +33,7 @@ const RegistrarUsuario=async(req,res)=>{
 
     }
     catch(Error){
-        console.error(Error)
+        return res.status(500).json({Error: 'Error Interno Server'})
     }
 }
 
